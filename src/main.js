@@ -487,7 +487,7 @@ export class Application {
     if (!renderManifest) throw new Error("The Canvas map render manifest is unavailable.");
     if (!locales || locales.schema_version !== 1
       || JSON.stringify(locales.locales || []) !== JSON.stringify(SUPPORTED_LOCALES)) {
-      throw new Error("The four-locale catalog is unavailable or invalid.");
+      throw new Error("The supported-locale catalog is unavailable or invalid.");
     }
     this.rawTreeData = rawTreeData;
     this.rawBossEvents = rawBossEvents;

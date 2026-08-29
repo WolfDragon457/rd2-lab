@@ -38,7 +38,7 @@ The public tree schema is [`schema/dice-tree.schema.json`](schema/dice-tree.sche
 
 `site/data/locales.json` carries the UI catalog and stable source keys for tree,
 compendium, planning, sharing, and update text. It declares the locale order
-`zh-tw`, `en`, `ja`, `ko`, with `zh-tw` as the published default. Runtime
+`zh-tw`, `en`, `ja`, `ko`, `ru`, with `zh-tw` as the published default. Runtime
 content mappings connect each stable entity ID to its source keys; localized
 copies retain canonical fields for topology and rule calculations.
 

@@ -6,7 +6,7 @@ const rootDir = process.cwd();
 const catalogPath = path.join(rootDir, "site", "data", "locales.json");
 const indexPath = path.join(rootDir, "site", "index.html");
 const treePath = path.join(rootDir, "site", "data", "dice_tree.json");
-const expectedLocales = ["zh-tw", "en", "ja", "ko"];
+const expectedLocales = ["zh-tw", "en", "ja", "ko", "ru"];
 const errors = [];
 const compareStrings = (left, right) => {
   const leftValue = String(left);

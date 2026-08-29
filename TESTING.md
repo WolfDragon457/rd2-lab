@@ -36,9 +36,9 @@ jobs.
 ## Translation coverage
 
 `site/data/locales.json` is generated from the source catalog and records the
-supported locales `zh-tw`, `en`, `ja`, and `ko`. The translation check requires
-every UI key and every runtime entity key to have a non-empty value in all four
-locales. It also compares positional placeholders and `<tag>`/`<color>` format
+supported locales `zh-tw`, `en`, `ja`, `ko`, and `ru`. The translation check requires
+every UI key and every runtime entity key to have a non-empty value in every
+supported locale. It also compares positional placeholders and `<tag>`/`<color>` format
 markers, verifies the localized SVG marker classes, and confirms that the
 language widget follows the changelog widget in the document.
 

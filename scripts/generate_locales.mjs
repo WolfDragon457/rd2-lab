@@ -8,6 +8,7 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const siteDir = path.join(rootDir, "site");
 const localesPath = path.join(siteDir, "data", "locales.json");
 const locales = ["zh-tw", "en", "ja", "ko"];
+const catalogLocales = ["zh-tw", "en", "ja", "ko", "ru"];
 const compareStrings = (left, right) => {
   const leftValue = String(left);
   const rightValue = String(right);
@@ -839,6 +840,27 @@ function deriveSourceCatalog(sourceDir, treeData, bossEvents) {
   };
 }
 
+function mergeRussianTranslations(catalog) {
+  const ruTranslationsPath = path.join(rootDir, "data", "ru_translations.json");
+  if (!fs.existsSync(ruTranslationsPath)) {
+    throw new Error(`Missing ${path.relative(rootDir, ruTranslationsPath)}`);
+  }
+  const ruData = JSON.parse(fs.readFileSync(ruTranslationsPath, "utf8"));
+  for (const section of ["ui", "source"]) {
+    const merged = {};
+    for (const [key, entry] of Object.entries(catalog[section] || {})) {
+      const ru = ruData?.[section]?.[key];
+      if (typeof ru !== "string" || ru.trim() === "") {
+        throw new Error(`Missing Russian translation for ${section}.${key}`);
+      }
+      merged[key] = { ...entry, ru: ru.trim() };
+    }
+    catalog[section] = merged;
+  }
+  catalog.locales = catalogLocales;
+  return catalog;
+}
+
 function getSourceDir() {
   const argumentIndex = process.argv.indexOf("--source");
   const fromArgument = argumentIndex >= 0 ? process.argv[argumentIndex + 1] : "";
@@ -854,7 +876,7 @@ if (!fs.existsSync(path.join(sourceDir, "localization_text.csv"))) {
 const treeData = JSON.parse(fs.readFileSync(path.join(siteDir, "data", "dice_tree.json"), "utf8"));
 const bossEvents = JSON.parse(fs.readFileSync(path.join(siteDir, "boss_event_data.json"), "utf8"));
 const derived = deriveSourceCatalog(sourceDir, treeData, bossEvents);
-const catalog = {
+const catalog = mergeRussianTranslations({
   schema_version: 1,
   source_version: "1.0.3",
   generated_from: "source locale rows and runtime entity stable IDs",
@@ -866,7 +888,7 @@ const catalog = {
   source_inventory: derived.source_inventory,
   source_format_patches: derived.source_format_patches,
   required_source_keys: derived.required_source_keys
-};
+});
 fs.writeFileSync(localesPath, `${JSON.stringify(catalog, null, 2)}\n`, "utf8");
 console.log(`Locale catalog written to ${path.relative(rootDir, localesPath)} (${Object.keys(catalog.ui).length} UI keys, ${Object.keys(catalog.source).length} source keys, ${catalog.required_source_keys.length} runtime source keys).`);
 console.log(`Source inventory: ${catalog.source_inventory.complete}/${catalog.source_inventory.total} complete; ${catalog.source_inventory.incomplete} incomplete source rows retained in the audit summary.`);

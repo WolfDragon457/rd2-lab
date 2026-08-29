@@ -13,7 +13,7 @@ Random Dice 2 Lab is an independent community reference project. It has no comme
 - Planning mode for ranks, costs, faction levels, batch actions, revoke actions, and team setup.
 - Shareable planning URLs and fixed-size PNG exports.
 - Version badges, structured changelog entries, official notice records, and data provenance checks.
-- A language selector beside the changelog widget with complete runtime catalogs for `zh-tw`, `en`, `ja`, and `ko`.
+- A language selector beside the changelog widget with complete runtime catalogs for `zh-tw`, `en`, `ja`, `ko`, and `ru`.
 - Responsive layouts, keyboard navigation, reduced-motion support, and browser smoke coverage.
 
 ## Current data snapshot

@@ -31,7 +31,7 @@ Visible interface text and published game content use the catalog in
 `site/data/locales.json`. Add or revise the source entry in
 `scripts/generate_locales.mjs`, keep the stable content mapping for each node,
 event, monster, tag, or faction, then regenerate the catalog. Values for
-`zh-tw`, `en`, `ja`, and `ko` must preserve positional placeholders and game
+`zh-tw`, `en`, `ja`, `ko`, and `ru` must preserve positional placeholders and game
 format markers such as `<tag>` and `<color>`.
 
 Run the focused checks after a catalog or visible-text change:

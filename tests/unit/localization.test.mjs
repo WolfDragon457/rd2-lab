@@ -41,7 +41,7 @@ function createFakeElement(attributes = {}) {
 }
 
 test("localization: normalizes locale aliases and interpolates named tokens", () => {
-  assert.deepEqual(SUPPORTED_LOCALES, ["zh-tw", "en", "ja", "ko"]);
+  assert.deepEqual(SUPPORTED_LOCALES, ["zh-tw", "en", "ja", "ko", "ru"]);
   assert.equal(normalizeLocale("zh-Hant-TW"), "zh-tw");
   assert.equal(normalizeLocale("ja-JP"), "ja");
   assert.equal(normalizeLocale("unknown", "ko"), "ko");
@@ -169,6 +169,21 @@ test("localization: special unlock conditions and level thresholds use locale ke
       "3106": "마법 레벨 10",
       "3107": "마법 레벨 30",
       "3108": "마법 레벨 50"
+    },
+    ru: {
+      "4008": "Семидневное задание 700",
+      "5002": "Убийства в кооперативе 900",
+      "5006": "Награда за охоту 2100",
+      "5008": "Пропуск арены 300",
+      "1106": "Уровень Природы 10",
+      "1107": "Уровень Природы 30",
+      "1108": "Уровень Природы 50",
+      "2106": "Уровень Техники 10",
+      "2107": "Уровень Техники 30",
+      "2108": "Уровень Техники 50",
+      "3106": "Уровень Магии 10",
+      "3107": "Уровень Магии 30",
+      "3108": "Уровень Магии 50"
     }
   };
   for (const locale of SUPPORTED_LOCALES) {

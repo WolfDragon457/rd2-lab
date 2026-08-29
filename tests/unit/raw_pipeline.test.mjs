@@ -217,7 +217,8 @@ test("raw pipeline: Predator targets use within-range wording and Punch charge s
     "zh-tw": "範圍內",
     en: "Within range",
     ja: "範囲内",
-    ko: "범위 내"
+    ko: "범위 내",
+    ru: "В пределах дальности"
   });
 });
 

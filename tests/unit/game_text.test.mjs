@@ -61,7 +61,7 @@ test("game_text: signed cooldown rune rank increments are applied and localized 
   const node = canonicalTree.nodes.find((candidate) => candidate.id === "1204");
   const templates = Object.values(localeCatalog.source.PillarCooldownMinus1Sec_desc || {});
   assert.ok(node, "canonical node 1204 must exist");
-  assert.equal(templates.length, 4, "the signed-rune regression must cover all locales");
+  assert.equal(templates.length, 5, "the signed-rune regression must cover all locales");
 
   for (const template of templates) {
     const rank1 = formatGameText(template, node, 1);

@@ -106,7 +106,7 @@ function escapeXml(value) {
 }
 
 function buildSitemapXml() {
-  const locales = ['zh-tw', 'en', 'ja', 'ko'];
+  const locales = ['zh-tw', 'en', 'ja', 'ko', 'ru'];
   const routes = new Set();
   const addRoute = route => routes.add(route);
   addRoute('/');

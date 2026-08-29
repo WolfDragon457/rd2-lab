@@ -51,7 +51,7 @@ test("UseCases: LoadGameDataUseCase fetches datasets and initializes store", asy
       return {
         ok: true,
         status: 200,
-        json: async () => ({ schema_version: 1, default_locale: "zh-tw", locales: ["zh-tw", "en", "ja", "ko"] })
+        json: async () => ({ schema_version: 1, default_locale: "zh-tw", locales: ["zh-tw", "en", "ja", "ko", "ru"] })
       };
     }
     return {

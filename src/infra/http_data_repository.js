@@ -554,7 +554,7 @@ export class HttpDataRepository extends DataRepositoryPort {
     const data = await response.json();
     const locales = Array.isArray(data?.locales) ? data.locales : [];
     if (!data || typeof data !== "object" || data.schema_version !== 1
-      || JSON.stringify(locales) !== JSON.stringify(["zh-tw", "en", "ja", "ko"])) {
+      || JSON.stringify(locales) !== JSON.stringify(["zh-tw", "en", "ja", "ko", "ru"])) {
       throw new Error(`Invalid locale catalog format received from ${url}`);
     }
     if (cacheGeneration === this._cacheGeneration) this._cache.set(url, data);

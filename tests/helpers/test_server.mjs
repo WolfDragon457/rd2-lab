@@ -158,7 +158,7 @@ export async function startTestServer(port = 0) {
         return;
       }
 
-      if (!fs.existsSync(filePath) && /^\/(?:zh-tw|en|ja|ko|simulation)(?:\/|$)/.test(relativePath)) {
+      if (!fs.existsSync(filePath) && /^\/(?:zh-tw|en|ja|ko|ru|simulation)(?:\/|$)/.test(relativePath)) {
         filePath = path.join(currentSiteDir, 'index.html');
       }
       if (!fs.existsSync(filePath)) {

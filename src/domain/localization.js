@@ -6,13 +6,14 @@
  * active locale while preserving the original numeric and topology fields.
  */
 
-export const SUPPORTED_LOCALES = Object.freeze(["zh-tw", "en", "ja", "ko"]);
+export const SUPPORTED_LOCALES = Object.freeze(["zh-tw", "en", "ja", "ko", "ru"]);
 
 export const LOCALE_META = Object.freeze({
   "zh-tw": Object.freeze({ label: "中文", intl: "zh-TW" }),
   en: Object.freeze({ label: "English", intl: "en" }),
   ja: Object.freeze({ label: "日本語", intl: "ja" }),
-  ko: Object.freeze({ label: "한국어", intl: "ko" })
+  ko: Object.freeze({ label: "한국어", intl: "ko" }),
+  ru: Object.freeze({ label: "Русский", intl: "ru" })
 });
 
 function isRecord(value) {
