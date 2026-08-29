@@ -46,7 +46,7 @@ test("Cloudflare contract: D1 binding and schema constraints use the production 
   assert.equal(config.pages_build_output_dir, ".pages");
   assert.equal(database?.binding, "DB");
   assert.equal(database?.database_name, "rd2-lab-shares");
-  assert.equal(database?.database_id, "64954abd-6289-41fb-af8f-8e1b3aa6cac2");
+  assert.equal(database?.database_id, "a8f7a9d0-915d-48d1-8085-191056f3d8c8");
   assert.match(migration, /payload TEXT NOT NULL UNIQUE/);
   assert.match(migration, /length\(payload\) BETWEEN 1 AND 4096/);
 });

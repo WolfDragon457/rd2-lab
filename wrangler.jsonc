@@ -6,7 +6,7 @@
     {
       "binding": "DB",
       "database_name": "rd2-lab-shares",
-      "database_id": "64954abd-6289-41fb-af8f-8e1b3aa6cac2",
+      "database_id": "a8f7a9d0-915d-48d1-8085-191056f3d8c8",
       "migrations_dir": "./migrations"
     }
   ]

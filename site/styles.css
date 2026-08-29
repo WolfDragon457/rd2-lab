@@ -4079,7 +4079,7 @@ body.simulation-mode #simulation-toggle-btn .hud-feature-label {
 }
 .simulation-share-copy-btn {
   height: 38px;
-  padding: 0 16px;
+  padding: 0 12px;
   background: #3b2d5c;
   border: 1px solid #7e52bf;
   border-radius: 10px;
@@ -4089,6 +4089,7 @@ body.simulation-mode #simulation-toggle-btn .hud-feature-label {
   cursor: pointer;
   white-space: nowrap;
   transition: all 160ms ease;
+  flex-shrink: 0;
 }
 .simulation-share-copy-btn:hover {
   background: #533e82;

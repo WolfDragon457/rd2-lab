@@ -156,6 +156,7 @@
     "simulation.shareOpen": "Открыть панель публикации",
     "simulation.shareClose": "Закрыть панель публикации",
     "simulation.copy": "Копировать",
+    "simulation.shareNative": "Поделиться",
     "simulation.imageLoading": "Генерация изображения…",
     "simulation.imageAlt": "Превью изображения симуляции билда",
     "simulation.download": "Скачать изображение",

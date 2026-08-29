@@ -554,6 +554,10 @@ export class SimulationView {
       this._copyShareUrl();
       return true;
     }
+    if (id === "simulation-share-native-btn") {
+      this._shareNativeUrl();
+      return true;
+    }
     if (id === "simulation-image-share-btn") {
       this._downloadShareImage();
       return true;
@@ -1763,6 +1767,11 @@ export class SimulationView {
     this._refreshShareUrl({ showLoading: true });
     this._setShareActionLabel("simulation-copy-share-btn", this._t("simulation.copy", {}, "Copy"));
     this._setShareActionLabel("simulation-image-share-btn", this._t("simulation.download", {}, "Download image"));
+    const nativeShareBtn = document.getElementById("simulation-share-native-btn");
+    if (nativeShareBtn) {
+      const supported = typeof navigator !== "undefined" && typeof navigator.share === "function";
+      nativeShareBtn.hidden = !supported;
+    }
 
     this._renderTeamSlots(1);
     this._renderShareImagePreview();
@@ -2346,6 +2355,7 @@ export class SimulationView {
     this.simulationUseCase.setTeam(newTeam);
   }
 
+<<<<<<< HEAD
   /* -------------------------------------------------------------
    * URL Sharing
    * ------------------------------------------------------------- */
@@ -2385,6 +2395,26 @@ export class SimulationView {
     });
     this._shareUrlPromise = { key, promise };
     return promise;
+  }
+
+  async _shareNativeUrl() {
+    const input = document.getElementById("simulation-share-url");
+    if (input?.value === this._t("simulation.urlLoading", {}, "Creating short link…")) await this._refreshShareUrl();
+    const value = input?.value || "";
+    if (!navigator.share) {
+      input?.focus?.();
+      input?.select?.();
+      this._setShareActionLabel("simulation-share-native-btn", this._t("simulation.copyManual", {}, "Copy manually"));
+      return;
+    }
+    try {
+      await navigator.share({ title: this._t("simulation.shareTitle", {}, "Share build"), text: this._t("simulation.shareTitle", {}, "Share build"), url: value });
+    } catch (error) {
+      if (error?.name === "AbortError") return;
+      input?.focus?.();
+      input?.select?.();
+      this._setShareActionLabel("simulation-share-native-btn", this._t("simulation.copyManual", {}, "Copy manually"));
+    }
   }
 
   async _copyShareUrl() {

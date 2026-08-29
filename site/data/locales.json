@@ -2501,6 +2501,13 @@
       "ja": "カオス",
       "ko": "혼돈",
       "ru": "Хаос"
+    },
+    "simulation.shareNative": {
+      "zh-tw": "分享",
+      "en": "Share",
+      "ja": "共有",
+      "ko": "공유",
+      "ru": "Поделиться"
     }
   },
   "source": {

@@ -311,6 +311,7 @@ const UI = {
   "simulation.shareOpen": { "zh-tw": "展開分享面板", en: "Open share panel", ja: "共有パネルを開く", ko: "공유 패널 열기" },
   "simulation.shareClose": { "zh-tw": "關閉分享面板", en: "Close share panel", ja: "共有パネルを閉じる", ko: "공유 패널 닫기" },
   "simulation.copy": { "zh-tw": "複製", en: "Copy", ja: "コピー", ko: "복사" },
+  "simulation.shareNative": { "zh-tw": "分享", en: "Share", ja: "共有", ko: "공유" },
   "simulation.imageLoading": { "zh-tw": "正在生成圖片…", en: "Generating image…", ja: "画像を生成中…", ko: "이미지를 생성하는 중…" },
   "simulation.imageAlt": { "zh-tw": "模擬配點圖片預覽", en: "Build simulation image preview", ja: "ビルドシミュレーション画像のプレビュー", ko: "빌드 시뮬레이션 이미지 미리보기" },
   "simulation.download": { "zh-tw": "下載圖片", en: "Download image", ja: "画像をダウンロード", ko: "이미지 다운로드" },
