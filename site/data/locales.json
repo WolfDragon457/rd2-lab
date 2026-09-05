@@ -638,7 +638,7 @@
       "en": "<strong>Player-made</strong>: Players maintain this guide and build planner. It is not affiliated with, authorized by, or endorsed by <strong>111 Percent Inc.</strong>.",
       "ja": "<strong>プレイヤー制作</strong>：プレイヤーが運営する攻略データベースとビルドシミュレーターです。<strong>111 Percent Inc.</strong>およびRandom Dice 2とは、提携・許諾・公式の推薦関係はありません。",
       "ko": "<strong>플레이어 제작</strong>: 이 가이드와 빌드 플래너는 플레이어가 운영합니다. <strong>111 Percent Inc.</strong> 또는 Random Dice 2와 제휴·허가·공식 후원 관계가 없습니다.",
-      "ru": "<strong>Фанатский проект</strong>: этот гайд и планировщик билдов поддерживаются игроками. Проект не аффилирован, не авторизован и не одобрен компанией <strong>111 Percent Inc.</strong>"
+      "ru": "<strong>Фанатский проект</strong>: этот гайд и планировщик билдов поддерживаются игроками. Проект не аффилирован, не авторизован и не одобрен компанией <strong>111 Percent Inc.</strong> Оригинальный проект: <a href=\"https://github.com/Estrella-071/rd2-lab\" class=\"disclaimer-inline-link\">Estrella-071/rd2-lab</a>. Этот форк: <a href=\"https://github.com/WolfDragon457/rd2-lab\" class=\"disclaimer-inline-link\">WolfDragon457/rd2-lab</a>."
     },
     "disclaimer.item.rights": {
       "zh-tw": "<strong>著作權</strong>：遊戲中的美術、圖示、音效、文字、數值與商標，均歸 <strong>111 Percent Inc.</strong> 及各原權利人所有。",

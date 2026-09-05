@@ -86,7 +86,7 @@
     "widget.disclaimer.title": "Фанатский проект",
     "widget.disclaimer.close": "Закрыть уведомление",
     "widget.disclaimer.badge": "ФАНАТСКИЙ",
-    "disclaimer.item.community": "<strong>Фанатский проект</strong>: этот гайд и планировщик билдов поддерживаются игроками. Проект не аффилирован, не авторизован и не одобрен компанией <strong>111 Percent Inc.</strong>",
+    "disclaimer.item.community": "<strong>Фанатский проект</strong>: этот гайд и планировщик билдов поддерживаются игроками. Проект не аффилирован, не авторизован и не одобрен компанией <strong>111 Percent Inc.</strong> Оригинальный проект: <a href=\"https://github.com/Estrella-071/rd2-lab\" class=\"disclaimer-inline-link\">Estrella-071/rd2-lab</a>. Этот форк: <a href=\"https://github.com/WolfDragon457/rd2-lab\" class=\"disclaimer-inline-link\">WolfDragon457/rd2-lab</a>.",
     "disclaimer.item.rights": "<strong>Авторские права</strong>: арт, иконки, звуки, тексты, балансные данные и товарные знаки игры принадлежат <strong>111 Percent Inc.</strong> и их соответствующим владельцам.",
     "disclaimer.item.nonprofit": "<strong>Использование</strong>: на сайте нет рекламы и платных функций. Ресурс предназначен для изучения, планирования и обсуждения.",
     "disclaimer.takedown": "Если вы представляете 111 Percent Inc. и хотите удалить какой-либо контент, свяжитесь по адресу <a href=\"mailto:itsestrella71@gmail.com\" class=\"disclaimer-inline-link\">itsestrella71@gmail.com</a> — мы оперативно отреагируем.",
