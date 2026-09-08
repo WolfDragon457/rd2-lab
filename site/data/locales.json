@@ -4546,7 +4546,7 @@
       "en": "Base <tag>RESONANCE</tag> Buff Effect +{0}% <color=#00FF00>(+{1}%)</color>",
       "ja": "<tag>RESONANCE</tag>基本バフ量{0}%<color=#00FF00>(+{1}%)</color>増加",
       "ko": "<tag>RESONANCE</tag> 기본 버프량 {0}% <color=#00FF00>(+{1}%)</color> 증가",
-      "ru": "Базовый эффект баффа <tag>RESONANCE</tag> +{0}%"
+      "ru": "Базовый эффект баффа <tag>RESONANCE</tag> +{0}%<color=#00FF00>(+{1}%)</color>"
     },
     "ResonanceGolemSpdUp_Resonance_name": {
       "zh-tw": "魔像回音",
@@ -6499,7 +6499,7 @@
       "en": "When gaining <tag>PREDATOR</tag>, {0}% chance to gain {2} additional stacks",
       "ja": "<tag>PREDATOR</tag>獲得時、<br>{0}%の確率で{2}スタック追加獲得",
       "ko": "<tag>PREDATOR</tag> 획득 시 {0}% 확률로 {2}중첩 추가 획득",
-      "ru": "При получении <tag>PREDATOR</tag> с шансом {0}% получает {1} дополнительных стаков"
+      "ru": "При получении <tag>PREDATOR</tag>: шанс {0}% получить {2} дополнительных стака"
     },
     "InstaPredatorHpThreshold_Predator_name": {
       "zh-tw": "吞噬弱者",

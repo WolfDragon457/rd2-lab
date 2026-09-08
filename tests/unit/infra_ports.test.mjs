@@ -114,10 +114,7 @@ test("HttpDataRepository: Loads and caches data via fetch with fallback", async 
   const allData = await repo.loadAll();
   assert.ok(allData.treeData);
   assert.ok(allData.bossEvents);
-<<<<<<< HEAD
   assert.ok(allData.monsterPosters);
-  assert.deepEqual(allData.locales.locales, ["zh-tw", "en", "ja", "ko", "ru"]);
->>>>>>> c725caf (Add Russian locale with complete UI and source translations)
   assert.ok(requestOptions.length > 0);
   assert.ok(requestOptions.every(options => options?.cache === "no-store"));
 

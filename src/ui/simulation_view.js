@@ -2352,10 +2352,9 @@ export class SimulationView {
       dice: newTeamEntries
     };
 
-    this.simulationUseCase.setTeam(newTeam);
+this.simulationUseCase.setTeam(newTeam);
   }
 
-<<<<<<< HEAD
   /* -------------------------------------------------------------
    * URL Sharing
    * ------------------------------------------------------------- */
