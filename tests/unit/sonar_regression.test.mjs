@@ -339,7 +339,7 @@ test("HttpDataRepository covers Canvas manifest and optional companion documents
     ["manifest.json", { ok: true, status: 200, json: async () => manifest }],
     ["meta.json", { ok: true, status: 200, json: async () => ({ version: "1.0.3" }) }],
     ["changes.json", { ok: true, status: 200, json: async () => ({ entries: [] }) }],
-    ["locales.json", { ok: true, status: 200, json: async () => ({ schema_version: 1, locales: ["zh-tw", "en", "ja", "ko"] }) }]
+    ["locales.json", { ok: true, status: 200, json: async () => ({ schema_version: 1, locales: ["zh-tw", "en", "ja", "ko", "ru"] }) }]
   ]);
   const calls = [];
   const repository = new HttpDataRepository({
@@ -355,7 +355,7 @@ test("HttpDataRepository covers Canvas manifest and optional companion documents
   assert.equal(await repository.loadRenderManifest(), manifest);
   assert.deepEqual(await repository.loadGameMetadata(), { version: "1.0.3" });
   assert.deepEqual(await repository.loadChangelog(), { entries: [] });
-  assert.deepEqual((await repository.loadLocales()).locales, ["zh-tw", "en", "ja", "ko"]);
+  assert.deepEqual((await repository.loadLocales()).locales, ["zh-tw", "en", "ja", "ko", "ru"]);
   assert.equal(calls.length, 4);
   assert.ok(calls.every(({ options }) => options.cache === "no-store"));
 

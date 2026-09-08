@@ -7,7 +7,8 @@
     "zh-tw",
     "en",
     "ja",
-    "ko"
+    "ko",
+    "ru"
   ],
   "ui": {
     "stats.bossDamageMultiplier": {
